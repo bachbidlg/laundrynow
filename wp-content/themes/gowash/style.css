@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@import url('fonts/font-awesome.min.css');
 /*
 Theme Name: GoWash
 Theme URI: http://gowash.ancorathemes.com/
@@ -2469,9 +2470,6 @@ body:not(.top_panel_fixed) .top_panel_position_over .top_panel_bottom {
 	margin-top:0.25em;
 	font-style:italic;
 }
-.top_panel_fixed .top_panel_wrap .logo_main {
-	display: none;
-}
 .top_panel_wrap .logo_fixed {
 	display:none;
 	max-height: 52px;
@@ -3354,7 +3352,7 @@ li.opened > a > .open_child_menu:before {
     height: auto;
     bottom: 0;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 10003;
     padding: 0px;
     transition: left 0.3s linear;
@@ -7208,4 +7206,238 @@ body .mailchimp_form input[type="email"] {
     -webkit-border-radius: 3em;
     -moz-border-radius: 3em;
     border-radius: 3em;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel--mobileview .carousel-indicators {
+    position: static;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel--mobileview .carousel-indicators li, .carousel--mobileview .carousel-indicators li.active {
+    width: 100%;
+    height: 130px;
+    text-align: left;
+    background: none;
+    border: none;
+}
+.carousel h4 {
+    margin-bottom: 6px;
+}
+.carousel--mobileview .carousel-indicators li.active h4, .carousel--mobileview .carousel-indicators li:hover h4 {
+    color: #00BA51;
+}
+.carousel--mobileview .carousel-indicators li p {
+    display: block;
+}
+.carousel--mobileview .carousel-inner {
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+.carousel--mobileview .carousel-inner .item {
+    position: static;
+    width: 100% !important;
+}
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+}
+.carousel--mobileview .carousel-bg {
+    background: url(https://17225-presscdn-0-73-pagely.netdna-ssl.com/vn/wp-content/themes/grabsg/images/mod-howitwork/empty.png) no-repeat center/cover;
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+}
+.carousel {
+    position: relative;
+}
+.carousel--mobileview .carousel-indicators li:before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+.carousel--mobileview .carousel-indicators li:after {
+    content: attr(data-step);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #00BA51;
+    font-weight: 500;
+    font-size: 1em;
+    color: #00BA51;
+    text-align: center;
+    line-height: 29px;
+    top: 5px;
+}
+.carousel--mobileview .carousel-indicators li:after {
+    line-height: 23px;
+    font-size: 0.8em;
+}
+.carousel--mobileview .carousel-indicators li.active:after, .carousel--mobileview .carousel-indicators li:hover:after {
+    background: #00BA51;
+    color: #fff;
+}
+.carousel--mobileview .carousel-indicators li {
+    text-indent: 0;
+    position: relative;
+    font-size: 1.143em;
+}
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+@media screen and (min-width: 768px) {
+.carousel-indicators {
+    bottom: 20px;
+}
+.carousel--mobileview {
+    min-height: 580px;
+}
+.carousel--mobileview .carousel-indicators {
+    float: right;
+    width: 50% !important;
+}
+.carousel--mobileview .carousel-indicators li {
+    padding: 0 0 10px 45px;
+}
+.carousel--mobileview .carousel-inner {
+    top: 68px;
+    margin-left: -290px;
+    width: 210px !important;
+    height: 365px;
+}
+.carousel--mobileview .carousel-bg {
+    top: 0px;
+    margin-left: -400px;
+    width: 400px;
+    height: 580px;
+}
+.carousel--mobileview .carousel-indicators li:before {
+    width: 13px;
+    height: 92px;
+    background: url(https://17225-presscdn-0-73-pagely.netdna-ssl.com/vn/wp-content/themes/grabsg/images/mod-howitwork/arrowdown.png) no-repeat center/cover;
+    bottom: 0px;
+    left: 8px;
+}
+}
+@media screen and (min-width: 414px) {
+.carousel-caption {
+    top: 50%;
+    left: 12%;
+    right: inherit;
+    text-align: left;
+    bottom: inherit;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-top: 60px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 35%;
+}
+}
+@media screen and (max-width: 767px) {
+.carousel--mobileview {
+    min-height: 540px;
+}
+.carousel--mobileview .carousel-indicators {
+    margin-left: 10%;
+    width: 90%;
+}
+.carousel--mobileview .carousel-indicators li {
+    padding: 0;
+    margin: 0 !important;
+}
+.carousel--mobileview .carousel-indicators.steps--4 li {
+    width: 25%;
+    float: left;
+}
+.carousel--mobileview .carousel-indicators li:before {
+    font-family: FontAwesome;
+    content: "\f061";
+    top: 5px;
+    right: 30%;
+    color: #333;
+}
+.carousel--mobileview .carousel-indicators li:last-child:before {display: none}
+.carousel--mobileview .carousel-indicators li h4, .carousel--mobileview .carousel-indicators li p {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.carousel--mobileview .carousel-description {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.carousel--mobileview .carousel-description h4 {
+    font-weight: 700;
+    margin-top: 5px;
+    color: #00BA51;
+}
+.carousel--mobileview .carousel-inner {
+    top: 195px;
+    margin-left: -61px;
+    width: 142px !important;
+    height: 248px;
+}
+.carousel--mobileview .carousel-bg {
+    top: 150px;
+    margin-left: -135px;
+    width: 270px;
+    height: 392px;
+}
+}
+@media screen and (max-width: 720px) {
+.carousel--mobileview .carousel-indicators li:before {
+    right: 20%;
+}
 }
