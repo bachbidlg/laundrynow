@@ -19,7 +19,7 @@
 }
 
 /*
-Apple iPhone 5, 5S & 5C 
+Apple iPhone 5, 5S & 5C
 Apple iPod Touch (5th generation)
 */
 /* With side menu
@@ -35,7 +35,7 @@ Apple iPod Touch (5th generation)
 	/* Content and Sidebar */
 	.sidebar_show .content { width: 670px; }
 	.sidebar { 				 width: 300px; }
-	
+
 	/* Fullwide or Fullscreen with sidebar */
 	.body_style_fullwide.sidebar_right .content, .body_style_fullscreen.sidebar_right .content { padding-right: 330px; }
 	.body_style_fullwide.sidebar_right .sidebar, .body_style_fullscreen.sidebar_right .sidebar { margin-left: -300px; }
@@ -56,7 +56,7 @@ Apple iPod Touch (5th generation)
 	.body_filled .sidebar[class*="scheme_"] .sidebar_inner {
 		padding: 2.1429em;
 	}
-	
+
 	/* Top Panel */
 	.top_panel_style_1 .contact_field {
 		text-align:center;
@@ -68,7 +68,7 @@ Apple iPod Touch (5th generation)
 		margin-left:auto;
 		margin-bottom:0.3em;
 	}
-	
+
 	/* Posts layouts */
 	.post_item_colored .post_category {
 		max-height:1.2em;
@@ -95,7 +95,7 @@ Apple iPod Touch (5th generation)
 	.sc_blogger .sc_scroll_horizontal .column-1_4 {
 		width: 257px;
 	}
-	
+
 	/* Shortcodes */
 	.sc_matches_next {
 		width: 35%;
@@ -118,7 +118,7 @@ Apple iPod Touch (5th generation)
 	.sc_matches.style_matches-2 .sc_match_info .name {
 		width:8em;
 	}
-	
+
 	/* Widgets */
 	.widget_area .sc_tabs.sc_tabs_style_2 .sc_tabs_titles li + li {
 		margin-left:0.4em;
@@ -126,7 +126,7 @@ Apple iPod Touch (5th generation)
 	.widget_area .sc_tabs.sc_tabs_style_2 .sc_tabs_titles li a {
 		padding: 2px 0.5em;
 	}
-	
+
 	/* Widget Recent News */
 	.sc_recent_news_style_news-announce .post_size_full {	height: 372px; }
 	.sc_recent_news_style_news-announce .post_size_big {	height: 186px; }
@@ -311,7 +311,7 @@ Apple iPod Touch (4th generation)
     h6 { font-size:0.857rem; }
 
 	.sidebar { 				 width: 270px; }
-	
+
 	/* Fullwide or Fullscreen with sidebar */
 	.body_style_fullwide.sidebar_right .content, .body_style_fullscreen.sidebar_right .content { padding-right: 300px; }
 	.body_style_fullwide.sidebar_right .sidebar, .body_style_fullscreen.sidebar_right .sidebar { margin-left: -270px; }
@@ -343,7 +343,7 @@ Apple iPod Touch (4th generation)
 		margin-left:auto;
 		margin-bottom:0.3em;
 	}
-	
+
 	/* Posts layouts */
 	.isotope_filters a {
 		font-size:0.8461em;
@@ -359,7 +359,7 @@ Apple iPod Touch (4th generation)
 	.post_item_colored .post_featured .post_title {
 		font-size:1.2857em;
 	}
-	
+
 	/* Post parts */
 	.post_info {
 		font-size:0.8461em;
@@ -406,7 +406,7 @@ Apple iPod Touch (4th generation)
 		font-size: 1em;
 	}
 
-	
+
 	/* Woocommerce */
 	.woocommerce .widget_price_filter .price_label {
 		font-size: 1em;
@@ -427,7 +427,7 @@ Apple iPod Touch (4th generation)
 		position:static;
 		width: auto;
 	}
-	
+
 	/* Matches and Players*/
 	.sc_matches_next {
 		width: 35%;
@@ -490,7 +490,7 @@ Samsung Galaxy
 	/* Content and Sidebar */
 	.sidebar_show .content { width: 100%; float: none; }
 	.sidebar_show .sidebar {width: 100%;float: none;margin-top: 6em;}
-	
+
 	/* Fullwide or Fullscreen with sidebar */
 	.body_style_fullwide.sidebar_right .content, .body_style_fullscreen.sidebar_right .content { padding-right: 0 !important; }
 	.body_style_fullwide.sidebar_right .sidebar, .body_style_fullscreen.sidebar_right .sidebar { margin-left: 0 !important; }
@@ -510,7 +510,7 @@ Samsung Galaxy
 	.slider_over_content .sc_form .sc_form_item textarea {
 		padding: 0.6em 1em;
 	}
-	
+
 	.sidebar aside {
 		display: inline-block;
 		vertical-align:top;
@@ -537,7 +537,7 @@ Samsung Galaxy
 	.gallery.gallery-columns-8 .gallery-item {	width: 20% !important; }
 	.gallery.gallery-columns-7 .gallery-item {	width: 20% !important; }
 	.gallery.gallery-columns-6 .gallery-item {	width: 20% !important; }
-	
+
 	/* Top Panel */
 	.top_panel_top_user_area {
 		float:none;
@@ -560,7 +560,7 @@ Samsung Galaxy
 		margin-left:auto;
 		margin-bottom:0.3em;
 	}
-	
+
 	/* Login and Register */
 	.popup_wrap {
 		top: 50%;
@@ -570,7 +570,7 @@ Samsung Galaxy
 			-ms-transform:translate(-50%, -50%);
 				transform:translate(-50%, -50%);
 	}
-	
+
 	/* Posts layouts */
 	.isotope_filters a {
 		font-size:0.8461em;
@@ -620,7 +620,7 @@ Samsung Galaxy
 	.post_item_colored .post_descr .post_price_value {
 		font-size:1.3846em;
 	}
-	
+
 	/* Widgets */
 	.widget_area .post_item .post_info {
 		font-size:0.7692em;
@@ -659,7 +659,7 @@ Samsung Galaxy
 		font-size: 1em;
 	}
 
-	/* Shortcodes */	
+	/* Shortcodes */
 	.sc_promo_block {
 		min-width: 50%;
 	}
@@ -677,7 +677,7 @@ Samsung Galaxy
 	.popup_menuitem > .sc_menuitems_wrap {
 		width: 600px;
 	}
-	
+
 	/* Matches and Players */
 	.sc_matches_next, .sc_matches_current {
 		float:none;
@@ -795,7 +795,7 @@ Samsung Galaxy
         padding: 0;
         top: 0;
     }
-	
+
 	/* Scroll to Top */
 	.scroll_to_top {
 		right: 1em;
@@ -840,7 +840,7 @@ Samsung Galaxy
 
 	/* Body sizes */
 	.slider_boxed, .content_wrap, .content_container {	width:600px; }
-	
+
 	/* Login and Register */
 	.popup_wrap {
 		top: 50%;
@@ -902,7 +902,7 @@ Samsung Galaxy
 
 	/* Body sizes */
 	.slider_boxed, .content_wrap, .content_container {	width:440px; }
-	
+
 	/* Login and Register */
 	.popup_wrap {
 		top: 50%;
@@ -996,7 +996,7 @@ Samsung Galaxy
 	/* Content and Sidebar */
 	.sidebar_show .content { width: 100%; float: none; }
 	.sidebar_show .sidebar { width: 100%; float: none; margin-top: 2em; }
-	
+
 	/* Fullwide or Fullscreen with sidebar */
 	.body_style_fullwide.sidebar_right .content, .body_style_fullscreen.sidebar_right .content { padding-right: 0 !important; }
 	.body_style_fullwide.sidebar_right .sidebar, .body_style_fullscreen.sidebar_right .sidebar { margin-left: 0 !important; }
@@ -1006,7 +1006,7 @@ Samsung Galaxy
 	/* WooCommerce: Content and Sidebar */
 	.woocommerce.sidebar_show .content { width: 100%; float: none; }
 	.woocommerce .sidebar { 			 width: 100%; float: none; margin-top: 2em; }
-	
+
 	.article_style_boxed .sidebar,
 	.body_filled .sidebar[class*="scheme_"] {
 		margin-top: 6em;
@@ -1024,7 +1024,7 @@ Samsung Galaxy
 	.slider_over_content .sc_form .sc_form_item textarea {
 		padding: 0.5em 1em;
 	}
-	
+
 	.widget_area aside {
 		display: inline-block;
 		float:none;
@@ -1125,7 +1125,7 @@ Samsung Galaxy
 	.gallery.gallery-columns-6 .gallery-item {	width: 33.3333% !important; }
 	.gallery.gallery-columns-5 .gallery-item {	width: 33.3333% !important; }
 	.gallery.gallery-columns-4 .gallery-item {	width: 33.3333% !important; }
-	
+
 
 	/* Top Panel */
 	.top_panel_top_user_area {
@@ -1171,14 +1171,14 @@ Samsung Galaxy
 	.top_panel_style_3 .search_results {
 		top: 3em;
 	}
-	
+
 	.top_panel_middle .logo {
 		font-size:0.875em;
 	}
 	.top_panel_middle .logo img {
 		max-height:40px;
 	}
-	
+
 	.top_panel_style_1 .contact_logo {
 		width:100%;
 	}
@@ -1239,7 +1239,7 @@ Samsung Galaxy
 	.ih-item.square.effect1.bottom_to_top .info .post_title {
 		margin-top:35% !important;
 	}
-	
+
 	.post_item_colored .post_category {
 		max-height:1.2em;
 		overflow:hidden;
@@ -1287,16 +1287,16 @@ Samsung Galaxy
 	.post_item_colored .post_descr .post_price_value {
 		font-size:1.3333em;
 	}
-	
+
 
 	.comments_list_wrap ul ul ul {
 		/* padding-left:0; */
 		margin-left:0;
 	}
-	
+
 	/* Reviews block */
 	.reviews_block {
-		width:100%; 
+		width:100%;
 	}
 	.content .reviews_block {
 		float:none;
@@ -1369,7 +1369,7 @@ Samsung Galaxy
 	.contacts_wrap .contacts_address {
 		font-size: 1em;
 	}
-	
+
 
 	/* Woocommerce */
 	.woocommerce-shipping-fields {
@@ -1406,7 +1406,7 @@ Samsung Galaxy
 	.woocommerce #content table.cart td.actions > .button, .woocommerce table.cart td.actions > .button, .woocommerce-page #content table.cart td.actions > .button, .woocommerce-page table.cart td.actions > .button {
 		float: right;
 	}
-	
+
 	.woocommerce.columns-2 ul.products li.product, .woocommerce-page.columns-2 ul.products li.product,
 	.woocommerce .related.products ul.products li.product.column-1_2, .woocommerce-page .related.products ul.products li.product.column-1_2,
 	.woocommerce .upcells.products ul.products li.product.column-1_2, .woocommerce-page .upcells.products ul.products li.product.column-1_2,
@@ -1477,9 +1477,9 @@ Samsung Galaxy
         padding: 0;
         top: 0;
     }
-	
 
-	
+
+
 	/* Shortcodes */
 	input[type="submit"]:before, input[type="button"]:before, button:before, .sc_button:before {
 		margin-right: 10px;
@@ -1488,7 +1488,7 @@ Samsung Galaxy
 	.sc_accordion.sc_accordion_style_2 .sc_accordion_item .sc_accordion_title .sc_accordion_icon {
 		border-width: 1px;
 	}
-	
+
 	.sc_price_block .sc_price_block_description {
     	height: 5.5em;
 	}
@@ -1505,7 +1505,7 @@ Samsung Galaxy
 		position:static;
 		width: auto;
 	}
-	
+
 /*
 	.sc_slider, .sc_slider .swiper_slide {
 		max-height:210px;
@@ -1530,7 +1530,7 @@ Samsung Galaxy
 	}
 	.sc_tabs.sc_tabs_style_2 .sc_tabs_titles li a {
 		border-width: 1px;
-	}	
+	}
 	.sc_tabs.sc_tabs_style_1 .sc_tabs_titles li.ui-state-active a:after,
 	.sc_tabs.sc_tabs_style_1 .sc_tabs_titles li.sc_tabs_active a:after {
 		height:2px;
@@ -1564,7 +1564,7 @@ Samsung Galaxy
 		transform: translateY(0%) translateX(0%);
 		margin-bottom: 2.2857em;
 	}
-	.sc_services_style_services-3 .sc_service_container .sc_icon, 
+	.sc_services_style_services-3 .sc_service_container .sc_icon,
 	.sc_services_style_services-3.sc_services_type_images .sc_service_container .sc_services_item_featured,
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap > .column-1_2:nth-child(2n) .sc_icon,
 	.sc_services_style_services-3.sc_services_type_images .sc_service_container.sc_align_right .columns_wrap > .column-1_2:nth-child(2n) .sc_services_item_featured	{
@@ -1576,7 +1576,7 @@ Samsung Galaxy
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap > .column-1_2 .sc_services_item_content	{
 		text-align: left;
 	}
-	
+
 	.sc_services_style_services-3 .sc_service_container.sc_align_left .columns_wrap,
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap 	{
 		margin-left: 0;
@@ -1640,7 +1640,7 @@ Samsung Galaxy
 	.scroll_to_top.show {
 		bottom: 1em;
 	}
-	
+
 }
 
 
@@ -1666,7 +1666,7 @@ Very common low res
 	/* Content and Sidebar */
 	.sidebar_show .content { width: 100%; float: none; }
 	.sidebar_show .sidebar { width: 100%; float: none; margin-top: 2em; }
-	
+
 	/* Fullwide or Fullscreen with sidebar */
 	.body_style_fullwide.sidebar_right .content, .body_style_fullscreen.sidebar_right .content { padding-right: 0 !important; }
 	.body_style_fullwide.sidebar_right .sidebar, .body_style_fullscreen.sidebar_right .sidebar { margin-left: 0 !important; }
@@ -1676,7 +1676,7 @@ Very common low res
 	/* WooCommerce: Content and Sidebar */
 	.woocommerce.sidebar_show .content { width: 100%; float: none; }
 	.woocommerce .sidebar { 			 width: 100%; float: none; }
-	
+
 	.article_style_boxed .sidebar,
 	.body_filled .sidebar[class*="scheme_"] {
 		margin-top: 6em;
@@ -1711,7 +1711,7 @@ Very common low res
 	.slider_over_content .sc_form .sc_form_item textarea {
 		padding: 0.5em 1em;
 	}
-	
+
 	.widget_area aside {
 		display: block;
 		float:none;
@@ -1839,14 +1839,14 @@ Very common low res
 	.top_panel_top_user_area .menu_user_nav > li > a {
 		padding:0.5em 0;
 	}
-	
+
 	.top_panel_middle .logo {
 		font-size:0.875em;
 	}
 	.top_panel_middle .logo img {
 		max-height:40px;
 	}
-	
+
 	.top_panel_style_1 .contact_logo {
 		width:100%;
 	}
@@ -2021,7 +2021,7 @@ Very common low res
 	.post_rating .reviews_star {
 		font-size:1em;
 	}
-	
+
 	.post_item_colored .post_category {
 		font-size:1em;
 		margin:0 0 0.4em;
@@ -2032,17 +2032,17 @@ Very common low res
 	.post_item_colored .post_descr .post_price_value {
 		font-size:1.3333em;
 	}
-	
-	
+
+
 	/* Reviews block */
 	.reviews_block {
-		width:100%; 
+		width:100%;
 	}
 	.content .reviews_block {
 		float:none;
 		margin-left:0;
 	}
-	
+
 	/* Comments */
 	.comments_list_wrap ul ul {
 		/* padding-left:0; */
@@ -2051,7 +2051,7 @@ Very common low res
 	.comments_list_wrap ul.children {
 		padding-left: 0;
 	}
-	
+
 	/* Widgets */
 	.widget_area .post_item .post_info {
 		font-size:0.75em;
@@ -2082,7 +2082,7 @@ Very common low res
 	.contacts_wrap .contacts_address {
 		font-size: 1em;
 	}
-	
+
 
 	/* Woocommerce */
 	.woocommerce-shipping-fields {
@@ -2137,7 +2137,7 @@ Very common low res
 		width: 100%;
 		float:none;
 	}
-	
+
 	.woocommerce[class*="column-"] ul.products li.product, .woocommerce-page[class*="column-"] ul.products li.product,
 	.woocommerce ul.products li.product[class*="column-"], .woocommerce-page ul.products li.product[class*="column-"],
 	.woocommerce .related ul li.product, .woocommerce .related ul.products li.product, .woocommerce .upsells.products ul li.product,
@@ -2146,7 +2146,7 @@ Very common low res
 		width: 100%;
 		float:none;
 	}
-	
+
 	.woocommerce.columns-2 ul.products li.product, .woocommerce-page.columns-2 ul.products li.product,
 	.woocommerce .related.products ul.products li.product.column-1_2, .woocommerce-page .related.products ul.products li.product.column-1_2,
 	.woocommerce .upcells.products ul.products li.product.column-1_2, .woocommerce-page .upcells.products ul.products li.product.column-1_2,
@@ -2212,8 +2212,8 @@ Very common low res
         padding: 0;
         top: 0;
     }
-	
-	
+
+
 	/* Shortcodes */
 	.sc_accordion.sc_accordion_style_2 .sc_accordion_item .sc_accordion_title .sc_accordion_icon {
 		border-width: 1px;
@@ -2293,7 +2293,7 @@ Very common low res
 	}
 	.sc_tabs.sc_tabs_style_2 .sc_tabs_titles li a {
 		border-width: 1px;
-	}	
+	}
 
 
 	.sc_twitter_item {
@@ -2305,7 +2305,7 @@ Very common low res
 	.sc_video_player.sc_video_bordered .sc_video_frame {
 		max-width:198px;
 	}
-	
+
 	.sc_services_style_services-3 .columns_wrap > .column-1_3 {
 		width: 100%;
 		max-width: 100%;
@@ -2327,7 +2327,7 @@ Very common low res
 		transform: translateY(0%) translateX(0%);
 		margin-bottom:2.2857em;
 	}
-	.sc_services_style_services-3 .sc_service_container .sc_icon, 
+	.sc_services_style_services-3 .sc_service_container .sc_icon,
 	.sc_services_style_services-3.sc_services_type_images .sc_service_container .sc_services_item_featured,
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap > .column-1_2:nth-child(2n) .sc_icon,
 	.sc_services_style_services-3.sc_services_type_images .sc_service_container.sc_align_right .columns_wrap > .column-1_2:nth-child(2n) .sc_services_item_featured	{
@@ -2339,7 +2339,7 @@ Very common low res
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap > .column-1_2 .sc_services_item_content	{
 		text-align: left;
 	}
-	
+
 	.sc_services_style_services-3 .sc_service_container.sc_align_left .columns_wrap,
 	.sc_services_style_services-3 .sc_service_container.sc_align_right .columns_wrap 	{
 		margin-left: 0;
@@ -2348,7 +2348,7 @@ Very common low res
 	.sc_services_style_services-3 .sc_services_button {
 		margin-top: 2.2857em;
 	}
-	
+
 	.sc_promo:not(.sc_promo_size_small) .sc_promo_block {
 		min-width: 100%;
 		margin: 0 !important;
@@ -2411,7 +2411,7 @@ Very common low res
 	.sc_matches.style_matches-2 .sc_match_info .name {
 		width:8em;
 	}
-	.sc_players_table table tr:first-child th, 
+	.sc_players_table table tr:first-child th,
 	.sc_players_table table tr:first-child td {
 		font-size: 1.2em;
 	}
@@ -2438,7 +2438,7 @@ Very common low res
 	.scroll_to_top.show {
 		bottom: 1em;
 	}
-	
+
 }
 
 
@@ -2464,14 +2464,17 @@ Very common low res
 	.header_mobile .logo_main {
 		height: 40px;
 	}
+    .header_mobile .content_wrap .logo a {
+        line-height: 42px;
+    }
 	.popup_wrap{
 		width: auto;
 		min-width: 260px;
 		max-width: 260px;
 	}
-	.popup_wrap .form_left, 
-	.popup_wrap .form_right, 
-	.popup_wrap.popup_registration .form_left, 
+	.popup_wrap .form_left,
+	.popup_wrap .form_right,
+	.popup_wrap.popup_registration .form_left,
 	.popup_wrap.popup_registration .form_right{
 		float: none;
 		padding: 0;
@@ -2497,7 +2500,7 @@ Very common low res
 	.header_mobile .logo {
 		padding-top: 24px;
 		padding-bottom: 5px;
-	}	
+	}
 	.header_mobile .menu_main_cart {
 		right: 30px;
 	}
@@ -2614,7 +2617,7 @@ Very common low res
     .sc_section.sc_call_to_action .sc_section_content {
         padding: 3rem 3rem 8.5rem;
     }
-    
+
     .sc_price_block .sc_price_block_title span {
         font-size: 1.543rem;
     }
