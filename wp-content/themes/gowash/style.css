@@ -7286,6 +7286,9 @@ body .mailchimp_form input[type="email"] {
 .carousel {
     position: relative;
 }
+.owl-carousel .item {
+    position: relative;
+}
 .carousel--mobileview .carousel-indicators li:before {
     content: '';
     display: block;
@@ -7488,3 +7491,14 @@ body .mailchimp_form input[type="email"] {
     font-size: 1.143em;
 }
 /* ----- SERVICES ----- */
+
+/* ----- INTRO ----- */
+.intro-title {
+    font-size: 35px;
+    line-height: initial;
+    margin: 1em 0;
+}
+.intro-content {
+    font-size: 18px;
+}
+/* ----- INTRO ----- */
