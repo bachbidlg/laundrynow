@@ -7208,6 +7208,7 @@ body .mailchimp_form input[type="email"] {
     border-radius: 3em;
 }
 
+/* ----- SLIDER INDEX ----- */
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
@@ -7441,3 +7442,48 @@ body .mailchimp_form input[type="email"] {
     right: 20%;
 }
 }
+/* ----- SLIDER INDEX ----- */
+
+/* ----- SERVICES ----- */
+.service.section header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service.section header h2 {
+    font-weight: 600;
+    font-size: 2.571em;
+    color: #00BA51;
+    text-align: center;
+}
+.section-body {
+    padding: 20px 0;
+}
+.media--divider {
+    border-bottom: solid 1px #d9d9d9;
+    padding-bottom: 35px;
+    margin-top: 35px;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.top-margin-md {
+    margin-top: 20px !important;
+}
+.media-iconlist .media-left {
+    padding-right: 35px;
+    width: 120px;
+}
+.media-iconlist .media-body {
+    width: auto;
+}
+.media-iconlist .media-object {
+    width: 100%;
+}
+.media-iconlist .media-body h4 {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+}
+.media-iconlist .media-body p {
+    font-size: 1.143em;
+}
+/* ----- SERVICES ----- */
