@@ -185,7 +185,7 @@
                                     <div class="logo">
                                         <a href="./index.html">
                                             <img src="wp-content/uploads/2016/06/logo_2x.png" class="logo_main" alt="" width="324" height="124">
-                                            
+
                                         </a>
                                     </div>
                                 </div>
@@ -213,10 +213,10 @@
                                                 </ul>
                                             </li>
                                             <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199">
-                                                <a href="javascript: void(0)"><span>Liên hệ</span></a>
+                                                <a href="javascript: void(0)" class="open-modal" data-modal="modal-contact"><span>Liên hệ</span></a>
                                             </li>
                                             <li id="menu-item-280" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                                <a href="javascript: void(0)"><span>Trở thành đối tác</span></a>
+                                                <a href="javascript: void(0)" class="open-modal" data-modal="modal-partner"><span>Trở thành đối tác</span></a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -260,10 +260,10 @@
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199">
-                                        <a href="javascript: void(0)"><span>Liên hệ</span></a>
+                                        <a href="javascript: void(0)" class="open-modal" data-modal="modal-contact"><span>Liên hệ</span></a>
                                     </li>
                                     <li class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                        <a href="javascript: void(0)"><span>Trở thành đối tác</span></a>
+                                        <a href="javascript: void(0)" class="open-modal" data-modal="modal-partner"><span>Trở thành đối tác</span></a>
                                     </li>
                                 </ul>
                             </nav>
@@ -437,7 +437,7 @@
                                                 </div>
                                                 <!-- /media-body -->
                                             </div>
-                                           
+
                                             <div class="footnote top-margin-md">
                                             </div>
                                         </div>
@@ -559,6 +559,186 @@
             <!-- /.page_wrap -->
         </div>
         <!-- /.body_wrap -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-partner">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Trở thành đối tác</h4>
+            </div>
+            <div class="layout-body">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="clearfix">
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-lastname" placeholder="Họ" modal-data-validate="required">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-firstname" placeholder="Tên" modal-data-validate="required">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-phone" placeholder="Điện thoại liên lạc" modal-data-validate="required|phone">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-email" placeholder="Địa chỉ email" modal-data-validate="required|email">
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <label class="control-label">Giới tính:</label>
+                            <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"><label class="control-label" for="gender-1">Nam</label>
+                            <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0"><label class="control-label" for="gender-0">Nữ</label>
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-address" placeholder="Địa chỉ" modal-data-validate="required">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="partner-job" placeholder="Công việc hiện tại" modal-data-validate="required">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <select class="form-control" name="partner-mode" modal-data-validate="required">
+                                <option value="">Chế độ làm việc</option>
+                                <option value="1">Toàn thời gian</option>
+                                <option value="2">Bán thời gian</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+            </div>
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-contact">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Liên hệ</h4>
+            </div>
+            <div class="layout-body">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="clearfix">
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="contact-lastname" placeholder="Họ tên" modal-data-validate="required">
+                        </div>
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <input type="text" class="form-control" name="contact-email" placeholder="Địa chỉ email" modal-data-validate="required|email">
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <textarea class="form-control" name="contact-content" placeholder="Nội dung" style="resize: none;" rows="7" modal-data-validate="required"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function emptyModal(modal){
+                jQuery('#'+modal+' .modal-header, #'+modal+' .modal-body, #'+modal+' .modal-footer').html('');
+            }
+            function loadModal(modal){
+                jQuery('.modal').attr('id', modal);
+                emptyModal(modal);
+                var modallayout = jQuery('.modal-layout[data-modal-layout="'+modal+'"]');
+                jQuery('#'+modal+' .modal-header').html(modallayout.find('.layout-header').html());
+                jQuery('#'+modal+' .modal-body').html(modallayout.find('.layout-body').html());
+                jQuery('#'+modal+' .modal-footer').html(modallayout.find('.layout-footer').html());
+            }
+            function isNull(val){
+                if(val != null && val != undefined && val != '')
+                    return false;
+                return true;
+            }
+            function isEmail(email){
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return regex.test(email);
+            }
+            function isPhone(phone){
+                var filter = /^[0-9-+]+$/;
+                return phone.length > 9 && filter.test(phone);
+            }
+            function validateFormModal(modal){
+                var validate = true,
+                    tag = ['input', 'textarea', 'select'];
+                jQuery.each(tag, function(k, v){
+                    jQuery('#'+modal).find(v).each(function(){
+                        var tagcurrent = jQuery(this),
+                            hasCheckValidate = jQuery(this).attr('modal-data-validate');
+                        if(!isNull(hasCheckValidate)) {
+                            var rule = hasCheckValidate.split('|');
+                            jQuery.each(rule, function(k_rule, v_rule){
+                                switch(v_rule.trim()){
+                                    case 'required':
+                                        if(isNull(tagcurrent.val())){
+                                            tagcurrent.addClass('hasError');
+                                            validate = false;
+                                        }
+                                        break;
+                                    case 'email':
+                                        if(!isEmail(tagcurrent.val())){
+                                            tagcurrent.addClass('hasError');
+                                            validate = false;
+                                        }
+                                        break;
+                                    case 'phone':
+                                        if(!isPhone(tagcurrent.val())){
+                                            tagcurrent.addClass('hasError');
+                                            validate = false;
+                                        }
+                                        break;
+                                    default: ;
+                                }
+                            });
+                        }
+                    })
+                })
+                return validate;
+            }
+            jQuery(document).ready(function(){
+                jQuery('.open-modal').on('click', function(){
+                    var modal = jQuery(this).attr('data-modal');
+                    loadModal(modal);
+                    jQuery('#'+modal).modal();
+                });
+                jQuery('.modal').on('hidden.bs.modal', function (e){
+                    var modal = jQuery(this).attr('id');
+                    emptyModal(modal);
+                    jQuery('.modal').attr('id', '');
+                });
+                jQuery('.modal').on('click', '.modal-send', function(){
+                    var validate = jQuery(this).attr('modal-validate'),
+                        checkvalidate = true;
+                    if(validate === "true") {
+                        var modal = jQuery(this).closest('.modal').attr('id');
+                        checkvalidate = validateFormModal(modal);
+                    }
+                    if(checkvalidate === true){
+                        // jQuery.ajax({
+                        //     type: 'POST',
+                        //     url: '',
+                        //     data: {}
+                        // }).done(function(res){
+                        // });
+                        console.log('ajax ok');
+                    }
+                });
+                jQuery('.modal').on('click', '.hasError', function(){
+                    jQuery(this).removeClass('hasError');
+                });
+            })
+        </script>
         <a href=javascript:void(0) class="scroll_to_top icon-up" title="Scroll to top"></a>
         <script type="text/javascript">(function() {function addEventListener(element,event,handler) {
             if(element.addEventListener) {
