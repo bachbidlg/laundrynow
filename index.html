@@ -458,8 +458,7 @@
                                             <img width="300" height="893" style="margin: auto; margin-top: 30px; margin-bottom: 30px" src="wp-content/uploads/2016/06/ds03.png" class="img-responsive vc_single_image-img attachment-full" alt="" >
                                         </div>
                                     </div>
-
-                                    <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1480334683565 scheme_original inverse_colors" style="position: relative; opacity: 100; left: -120px; box-sizing: border-box; width: 1440px; padding-left: 120px; padding-right: 120px;">
+                                    <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1480334683565 scheme_original inverse_colors">
                                        <div class="wpb_column vc_column_container vc_col-sm-12">
                                           <div class="vc_column-inner ">
                                              <div class="wpb_wrapper">
@@ -517,7 +516,7 @@
                                           </div>
                                        </div>
                                     </div>
-
+                                    <div class="vc_row-full-width"></div>
                                     <div class="vc_row wpb_row vc_row-fluid vc_custom_1467891297135">
                                         <div class="wpb_column vc_column_container vc_col-sm-12">
                                             <div class="vc_column-inner ">
@@ -774,11 +773,11 @@
                                                                             }
                                                                             })();
                                                                         </script><!-- MailChimp for WordPress v4.0.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-470" method="post" data-id="470" data-name="" >
+                                                                        <div id="mc4wp-form-1" class="mc4wp-form mc4wp-form-470" method="post" data-id="470" data-name="" >
                                                                             <div class="mc4wp-form-fields">
                                                                                 <div class="mailchimp_form">
                                                                                     <div class="mailchimp_wrap">
-                                                                                        <input type="email" name="EMAIL" placeholder="Nhập email của bạn" required />
+                                                                                        <input type="email" class="form-control" name="email" placeholder="Nhập email của bạn" required />
                                                                                         <button>Đăng ký</button>
                                                                                     </div>
                                                                                 </div>
@@ -786,8 +785,23 @@
                                                                                 <input type="hidden" name="_mc4wp_timestamp" value="1497541612" /><input type="hidden" name="_mc4wp_form_id" value="470" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
                                                                             </div>
                                                                             <div class="mc4wp-response"></div>
-                                                                        </form>
+                                                                        </div>
                                                                         <!-- / MailChimp for WordPress Plugin -->
+                                                                        <script type="text/javascript">
+                                                                            jQuery(document).ready(function(){
+                                                                                jQuery('.mailchimp_wrap button').click(function(){
+                                                                                    var iptEmail = jQuery(this).closest('.mailchimp_wrap').find('input[name="email"]'),
+                                                                                        email = jQuery(this).closest('.mailchimp_wrap').find('input[name="email"]').val();
+                                                                                    if(isNull(email) || !isEmail(email)) {
+                                                                                        iptEmail.addClass('hasError');
+                                                                                    } else {
+                                                                                        iptEmail.val('');
+                                                                                        loadModal('modal-email');
+                                                                                        jQuery('#modal-email').modal();
+                                                                                    }
+                                                                                })
+                                                                            })
+                                                                        </script>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -894,6 +908,18 @@
             </div>
             <!-- /.modal-dialog -->
         </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-email">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Nhận thông tin về khuyến mãi!</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng ký, thông tin về khuyến mãi sẽ được gửi đến hộp thư của bạn.
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
         <div class="modal-layout hidden" data-modal-layout="modal-alert">
             <div class="layout-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -901,6 +927,18 @@
             </div>
             <div class="layout-body">
                 Ứng dụng sẽ sớm đc phát hành. Cám ơn bạn đã qua tâm!
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-partner-success">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Trở thành đối tác</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng ký, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -957,7 +995,19 @@
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+                <button type="button" class="btn btn-primary modal-send" modal-success="modal-partner-success" modal-validate="true">Gửi</button>
+            </div>
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-contact-success">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Liên hệ</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng đóng góp ý kiến. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>
         <div class="modal-layout hidden" data-modal-layout="modal-contact">
@@ -997,7 +1047,7 @@
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+                <button type="button" class="btn btn-primary modal-send" modal-success="modal-contact-success" modal-validate="true">Gửi</button>
             </div>
         </div>
         <script type="text/javascript">
@@ -1088,22 +1138,18 @@
                 });
                 jQuery('.modal').on('click', '.modal-send', function(){
                     var validate = jQuery(this).attr('modal-validate'),
-                        checkvalidate = true;
+                        checkvalidate = true,
+                        modal = jQuery(this).closest('.modal').attr('id'),
+                        modalSuccess = jQuery(this).attr('modal-success');
                     if(validate === "true") {
-                        var modal = jQuery(this).closest('.modal').attr('id');
                         checkvalidate = validateFormModal(modal);
                     }
                     if(checkvalidate === true){
-                        // jQuery.ajax({
-                        //     type: 'POST',
-                        //     url: '',
-                        //     data: {}
-                        // }).done(function(res){
-                        // });
-                        console.log('ajax ok');
+                        loadModal(modalSuccess);
+                        jQuery('#'+modalSuccess).modal();
                     }
                 });
-                jQuery('.modal').on('click focus active', '.hasError, .error-msg', function(){
+                jQuery('body').on('click focus active', '.hasError, .error-msg', function(){
                     jQuery(this).parent().find('.hasError').removeClass('hasError').parent().find('.error-msg').remove();
                 });
             })

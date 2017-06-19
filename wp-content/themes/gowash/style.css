@@ -7234,6 +7234,9 @@ body .mailchimp_form input[type="email"] {
     border: 1px solid #fff;
     border-radius: 10px;
 }
+.carousel--mobileview .carousel-indicators li:last-child:before {
+    display: none;
+}
 .carousel--mobileview .carousel-indicators li, .carousel--mobileview .carousel-indicators li.active {
     width: 100%;
     height: 130px;
@@ -7531,13 +7534,16 @@ body .mailchimp_form input[type="email"] {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-.modal .form-control.hasError {
+.modal .form-control.hasError, body .mailchimp_form .form-control.hasError {
     border-color: red;
     -webkit-box-shadow: inset 0 1px 1px rgba(255, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(255, 0, 0, .075);
 }
 .modal .ipt-radio {
     margin-left: 5px;
+}
+.modal .btn {
+    border: none;
 }
 span.error-msg {
     position: absolute;

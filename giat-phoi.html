@@ -576,6 +576,18 @@
             </div>
             <!-- /.modal-dialog -->
         </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-email">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Nhận thông tin về khuyến mãi!</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng ký, thông tin về khuyến mãi sẽ được gửi đến hộp thư của bạn.
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
         <div class="modal-layout hidden" data-modal-layout="modal-alert">
             <div class="layout-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -583,6 +595,18 @@
             </div>
             <div class="layout-body">
                 Ứng dụng sẽ sớm đc phát hành. Cám ơn bạn đã qua tâm!
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-partner-success">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Trở thành đối tác</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng ký, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -613,6 +637,14 @@
                             <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"><label class="control-label" for="gender-1">Nam</label>
                             <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0"><label class="control-label" for="gender-0">Nữ</label>
                         </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="control-label" for="ipt-delivery">Có thể giao nhận hàng</label>
+                            <input type="checkbox" name="" value="" id="ipt-delivery">
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="control-label" for="ipt-machine">Có máy giặt tại nhà</label>
+                            <input type="checkbox" name="" value="" id="ipt-machine">
+                        </div>
                         <div class="col-xs-12 form-group">
                             <input type="text" class="form-control" name="partner-address" placeholder="Địa chỉ" modal-data-validate="required">
                         </div>
@@ -631,7 +663,19 @@
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+                <button type="button" class="btn btn-primary modal-send" modal-success="modal-partner-success" modal-validate="true">Gửi</button>
+            </div>
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-contact-success">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Liên hệ</h4>
+            </div>
+            <div class="layout-body">
+                Cám ơn bạn đã đăng đóng góp ý kiến. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>
         <div class="modal-layout hidden" data-modal-layout="modal-contact">
@@ -641,6 +685,21 @@
             </div>
             <div class="layout-body">
                 <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="modal-contact-info">
+                        <div class="scheme_original text-center" style="margin-bottom: 20px;">
+                            <div class="widget_area">
+                                <div class="widget_text">
+                                    <div class="textwidget">
+                                        <div class="info icon-phone">123-456-7890</div>
+                                        Số 2 Phạm Ngọc Thạch, P.6, Q.3, Tp.HCM
+                                        <span style="text-decoration: underline; display: block;">
+                                            <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="clearfix">
                         <div class="col-md-6 col-xs-12 form-group">
                             <input type="text" class="form-control" name="contact-lastname" placeholder="Họ tên" modal-data-validate="required">
@@ -649,14 +708,14 @@
                             <input type="text" class="form-control" name="contact-email" placeholder="Địa chỉ email" modal-data-validate="required|email">
                         </div>
                         <div class="col-xs-12 form-group">
-                            <textarea class="form-control" name="contact-content" placeholder="Nội dung" style="resize: none;" rows="7" modal-data-validate="required"></textarea>
+                            <textarea class="form-control" name="contact-content" modal-data-placeholder="Nội dung" placeholder="LaunderNow tiếp nhận thông tin góp ý của bạn, vui lòng nhập nội dung vào đây" style="resize: none;" rows="7" modal-data-validate="required"></textarea>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="layout-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary modal-send" modal-validate="true">Gửi</button>
+                <button type="button" class="btn btn-primary modal-send" modal-success="modal-contact-success" modal-validate="true">Gửi</button>
             </div>
         </div>
         <script type="text/javascript">
@@ -698,18 +757,27 @@
                                     case 'required':
                                         if(isNull(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">Vui lòng '+(v == 'select' ? 'chọn' : 'nhập')+' '+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+'</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
                                     case 'email':
                                         if(!isEmail(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
                                     case 'phone':
                                         if(!isPhone(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
@@ -722,6 +790,10 @@
                 return validate;
             }
             jQuery(document).ready(function(){
+                jQuery('.scroll-to').click(function(){
+                    var scrollto = jQuery(this).attr('data-scroll');
+                    jQuery('html, body').animate({scrollTop: (jQuery("#"+scrollto).offset().top - jQuery('.top_panel_wrap.top_panel_style_3').outerHeight())}, 1000);
+                });
                 jQuery('.open-modal').on('click', function(){
                     var modal = jQuery(this).attr('data-modal');
                     loadModal(modal);
@@ -734,23 +806,19 @@
                 });
                 jQuery('.modal').on('click', '.modal-send', function(){
                     var validate = jQuery(this).attr('modal-validate'),
-                        checkvalidate = true;
+                        checkvalidate = true,
+                        modal = jQuery(this).closest('.modal').attr('id'),
+                        modalSuccess = jQuery(this).attr('modal-success');
                     if(validate === "true") {
-                        var modal = jQuery(this).closest('.modal').attr('id');
                         checkvalidate = validateFormModal(modal);
                     }
                     if(checkvalidate === true){
-                        // jQuery.ajax({
-                        //     type: 'POST',
-                        //     url: '',
-                        //     data: {}
-                        // }).done(function(res){
-                        // });
-                        console.log('ajax ok');
+                        loadModal(modalSuccess);
+                        jQuery('#'+modalSuccess).modal();
                     }
                 });
-                jQuery('.modal').on('click', '.hasError', function(){
-                    jQuery(this).removeClass('hasError');
+                jQuery('body').on('click focus active', '.hasError, .error-msg', function(){
+                    jQuery(this).parent().find('.hasError').removeClass('hasError').parent().find('.error-msg').remove();
                 });
             })
         </script>
