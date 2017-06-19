@@ -348,13 +348,11 @@
                         <img src="wp-content/uploads/2016/07/slide2.jpg"  alt="" title="slide1">
                         <div class="caption-slider">
                             <div class="carousel-caption">
-
-
-                                             <h1>Tăng thu nhập. Thêm kết nối.</h1>
+                                <h1>Tăng thu nhập. Thêm kết nối.</h1>
                                 <p>Trở thành đối tác của LauderNow để làm chủ cuộc sống mình tốt hơn.</p>
-                                 <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                                <a href="javascript: void(0)"><span>ĐĂNG KÝ NGAY</span></a>
-                                            </li>
+                                <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
+                                    <a href="javascript: void(0)" class="open-modal" data-modal="modal-partner"><span>ĐĂNG KÝ NGAY</span></a>
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -362,11 +360,11 @@
                         <img src="wp-content/uploads/2016/07/slide1.jpg"  alt="" title="slide2">
                         <div class="caption-slider">
                             <div class="carousel-caption">
-                                 <h1>Giặt ủi với 3 bước.</h1>
+                                <h1>Giặt ủi với 3 bước.</h1>
                                 <p>Tải ứng dụng LaunderNow.</p>
-                                 <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                                <a href="javascript: void(0)"><span>TẢI NGAY</span></a>
-                                            </li>
+                                <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
+                                    <a href="javascript: void(0)" class="open-modal" data-modal="modal-alert"><span>TẢI NGAY</span></a>
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -376,9 +374,9 @@
                             <div class="carousel-caption">
                                 <h1>Tiết kiệm thời gian và chi phí.</h1>
                                 <p>Trải nghiệm dịch vụ giặt ủi tốt nhất.</p>
-                                 <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                                <a href="javascript: void(0)"><span>TÌM HIỂU THÊM</span></a>
-                                            </li>
+                                <li id="menu-item-280" style="list-style-type: none;" class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
+                                    <a href="javascript: void(0)" class="scroll-to" data-scroll="introduction"><span>TÌM HIỂU THÊM</span></a>
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -415,7 +413,7 @@
                         <div class="content">
                             <article class="itemscope post_item post_item_single post_featured_center post_format_standard post-5 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
                                 <section class="post_content" itemprop="articleBody">
-                                    <div class="vc_row wpb_row vc_row-fluid clearfix">
+                                    <div class="vc_row wpb_row vc_row-fluid clearfix" id="introduction">
                                         <div class="col-md-8 col-xs-12">
                                             <div class="intro-title text-center">Xu hướng giặt ủi công nghệ mới, tiết kiệm chi phí!</div>
                                             <div class="intro-content clearfix">
@@ -613,7 +611,10 @@
                                                 <div class="wpb_wrapper">
                                                     <div class="sc_section">
                                                         <div class="sc_section_inner">
-                                                            <div class="sc_section_content_wrap"><a href=javascript:void(0) class="sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny margin_right_tiny  sc_button_iconed icon-icon_apple" style="max-width: 16.5rem;">tải ứng dụng từ store</a><a href=javascript:void(0) class="sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny  sc_button_iconed icon-icon_android" style="max-width: 17rem;">tải ứng dụng từ google play</a></div>
+                                                            <div class="sc_section_content_wrap">
+                                                                <a href="javascript:void(0)" class="open-modal sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny margin_right_tiny  sc_button_iconed icon-icon_apple" data-modal="modal-alert" style="max-width: 16.5rem;">tải ứng dụng từ store</a>
+                                                                <a href="javascript:void(0)" class="open-modal sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny  sc_button_iconed icon-icon_android" data-modal="modal-alert" style="max-width: 17rem;">tải ứng dụng từ google play</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -893,6 +894,18 @@
             </div>
             <!-- /.modal-dialog -->
         </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-alert">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Thông báo</h4>
+            </div>
+            <div class="layout-body">
+                Ứng dụng sẽ sớm đc phát hành. Cám ơn bạn đã qua tâm!
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
         <div class="modal-layout hidden" data-modal-layout="modal-partner">
             <div class="layout-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -1027,6 +1040,10 @@
                 return validate;
             }
             jQuery(document).ready(function(){
+                jQuery('.scroll-to').click(function(){
+                    var scrollto = jQuery(this).attr('data-scroll');
+                    jQuery('html, body').animate({scrollTop: (jQuery("#"+scrollto).offset().top - jQuery('.top_panel_wrap.top_panel_style_3').outerHeight())}, 1000);
+                });
                 jQuery('.open-modal').on('click', function(){
                     var modal = jQuery(this).attr('data-modal');
                     loadModal(modal);

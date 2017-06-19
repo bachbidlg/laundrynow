@@ -469,7 +469,10 @@
                                                 <div class="wpb_wrapper">
                                                     <div class="sc_section">
                                                         <div class="sc_section_inner">
-                                                            <div class="sc_section_content_wrap"><a href=javascript:void(0) class="sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny margin_right_tiny  sc_button_iconed icon-icon_apple" style="max-width: 16.5rem;">tải ứng dụng từ store</a><a href=javascript:void(0) class="sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny  sc_button_iconed icon-icon_android" style="max-width: 17rem;">tải ứng dụng từ google play</a></div>
+                                                            <div class="sc_section_content_wrap">
+                                                                <a href="javascript:void(0)" class="open-modal sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny margin_right_tiny  sc_button_iconed icon-icon_apple" data-modal="modal-alert" style="max-width: 16.5rem;">tải ứng dụng từ store</a>
+                                                                <a href="javascript:void(0)" class="open-modal sc_button sc_button_round sc_button_style_border sc_button_size_small inverse_color margin_top_tiny  sc_button_iconed icon-icon_android" data-modal="modal-alert" style="max-width: 17rem;">tải ứng dụng từ google play</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -572,6 +575,18 @@
                 <!-- /.modal-content -->
             </div>
             <!-- /.modal-dialog -->
+        </div>
+        <div class="modal-layout hidden" data-modal-layout="modal-alert">
+            <div class="layout-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Thông báo</h4>
+            </div>
+            <div class="layout-body">
+                Ứng dụng sẽ sớm đc phát hành. Cám ơn bạn đã qua tâm!
+            </div>
+            <div class="layout-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
         </div>
         <div class="modal-layout hidden" data-modal-layout="modal-partner">
             <div class="layout-header">
