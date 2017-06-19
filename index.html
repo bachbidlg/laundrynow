@@ -931,6 +931,14 @@
                             <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"><label class="control-label" for="gender-1">Nam</label>
                             <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0"><label class="control-label" for="gender-0">Nữ</label>
                         </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="control-label" for="ipt-delivery">Có thể giao nhận hàng</label>
+                            <input type="checkbox" name="" value="" id="ipt-delivery">
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="control-label" for="ipt-machine">Có máy giặt tại nhà</label>
+                            <input type="checkbox" name="" value="" id="ipt-machine">
+                        </div>
                         <div class="col-xs-12 form-group">
                             <input type="text" class="form-control" name="partner-address" placeholder="Địa chỉ" modal-data-validate="required">
                         </div>
@@ -959,6 +967,21 @@
             </div>
             <div class="layout-body">
                 <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="modal-contact-info">
+                        <div class="scheme_original text-center" style="margin-bottom: 20px;">
+                            <div class="widget_area">
+                                <div class="widget_text">
+                                    <div class="textwidget">
+                                        <div class="info icon-phone">123-456-7890</div>
+                                        Số 2 Phạm Ngọc Thạch, P.6, Q.3, Tp.HCM
+                                        <span style="text-decoration: underline; display: block;">
+                                            <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="clearfix">
                         <div class="col-md-6 col-xs-12 form-group">
                             <input type="text" class="form-control" name="contact-lastname" placeholder="Họ tên" modal-data-validate="required">
@@ -967,7 +990,7 @@
                             <input type="text" class="form-control" name="contact-email" placeholder="Địa chỉ email" modal-data-validate="required|email">
                         </div>
                         <div class="col-xs-12 form-group">
-                            <textarea class="form-control" name="contact-content" placeholder="Nội dung" style="resize: none;" rows="7" modal-data-validate="required"></textarea>
+                            <textarea class="form-control" name="contact-content" modal-data-placeholder="Nội dung" placeholder="LaunderNow tiếp nhận thông tin góp ý của bạn, vui lòng nhập nội dung vào đây" style="resize: none;" rows="7" modal-data-validate="required"></textarea>
                         </div>
                     </div>
                 </form>
@@ -1016,18 +1039,27 @@
                                     case 'required':
                                         if(isNull(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">Vui lòng '+(v == 'select' ? 'chọn' : 'nhập')+' '+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+'</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
                                     case 'email':
                                         if(!isEmail(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
                                     case 'phone':
                                         if(!isPhone(tagcurrent.val())){
                                             tagcurrent.addClass('hasError');
+                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            }
                                             validate = false;
                                         }
                                         break;
@@ -1071,8 +1103,8 @@
                         console.log('ajax ok');
                     }
                 });
-                jQuery('.modal').on('click', '.hasError', function(){
-                    jQuery(this).removeClass('hasError');
+                jQuery('.modal').on('click focus active', '.hasError, .error-msg', function(){
+                    jQuery(this).parent().find('.hasError').removeClass('hasError').parent().find('.error-msg').remove();
                 });
             })
         </script>

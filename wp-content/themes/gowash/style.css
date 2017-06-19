@@ -7539,4 +7539,18 @@ body .mailchimp_form input[type="email"] {
 .modal .ipt-radio {
     margin-left: 5px;
 }
+span.error-msg {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    transform: translateY(-100%);
+    background: red;
+    color: #fff;
+    padding: 0px 10px;
+    max-width: calc(100% - 30px);
+}
+.modal .form-control:active, .modal .form-control:focus {
+    z-index: 999;
+    position: relative;
+}
 /* ----- MODAL ----- */
