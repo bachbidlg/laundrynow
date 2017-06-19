@@ -7245,7 +7245,7 @@ body .mailchimp_form input[type="email"] {
     margin-bottom: 6px;
 }
 .carousel--mobileview .carousel-indicators li.active h4, .carousel--mobileview .carousel-indicators li:hover h4 {
-    color: #00BA51;
+    color: #3fcef1;
 }
 .carousel--mobileview .carousel-indicators li p {
     display: block;
@@ -7302,10 +7302,10 @@ body .mailchimp_form input[type="email"] {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid #00BA51;
+    border: 2px solid #3fcef1;
     font-weight: 500;
     font-size: 1em;
-    color: #00BA51;
+    color: #3fcef1;
     text-align: center;
     line-height: 29px;
     top: 5px;
@@ -7315,7 +7315,7 @@ body .mailchimp_form input[type="email"] {
     font-size: 0.8em;
 }
 .carousel--mobileview .carousel-indicators li.active:after, .carousel--mobileview .carousel-indicators li:hover:after {
-    background: #00BA51;
+    background: #3fcef1;
     color: #fff;
 }
 .carousel--mobileview .carousel-indicators li {
@@ -7425,7 +7425,7 @@ body .mailchimp_form input[type="email"] {
 .carousel--mobileview .carousel-description h4 {
     font-weight: 700;
     margin-top: 5px;
-    color: #00BA51;
+    color: #3fcef1;
 }
 .carousel--mobileview .carousel-inner {
     top: 195px;
@@ -7455,7 +7455,7 @@ body .mailchimp_form input[type="email"] {
 .service.section header h2 {
     font-weight: 600;
     font-size: 2.571em;
-    color: #00BA51;
+    color: #3fcef1;
     text-align: center;
     margin-top: 1em;
 }
