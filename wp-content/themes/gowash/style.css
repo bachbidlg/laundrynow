@@ -3284,7 +3284,6 @@ li.opened > a > .open_child_menu:before {
 .header_mobile {
 	position: relative;
     z-index: 10003;
-	display: none;
 }
 .header_mobile .top_panel_fixed_wrap {
     display: none;
@@ -3307,11 +3306,12 @@ li.opened > a > .open_child_menu:before {
 	text-align: center;
 }
 .header_mobile .logo {
-    padding-top: 35px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .header_mobile .logo_main{
     height: 53px;
+    margin-bottom: 0;
 }
 .header_mobile .menu_button {
     position: absolute;

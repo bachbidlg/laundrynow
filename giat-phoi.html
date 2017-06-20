@@ -168,7 +168,7 @@
         <div class="body_wrap">
             <div class="page_wrap">
                 <div class="top_panel_fixed_wrap"></div>
-                <header class="top_panel_wrap top_panel_style_3 scheme_original">
+                <header class="top_panel_wrap top_panel_style_3 scheme_original hidden-sm hidden-xs">
                     <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
                         <div class="top_panel_middle" >
                             <div class="content_wrap">
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="header_mobile">
+                <div class="header_mobile hidden-lg hidden-md">
                     <div class="content_wrap">
                         <div class="menu_button icon-menu"></div>
                         <div class="logo">
@@ -262,7 +262,7 @@
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199">
                                         <a href="javascript: void(0)" class="open-modal" data-modal="modal-contact"><span>Liên hệ</span></a>
                                     </li>
-                                    <li class="item_button menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
                                         <a href="javascript: void(0)" class="open-modal" data-modal="modal-partner"><span>Trở thành đối tác</span></a>
                                     </li>
                                 </ul>
@@ -326,18 +326,24 @@
                         overflow: hidden;
                         position: relative;
                     }
-                    .owl-carousel .owl-item img {
-                        width: auto !important;
+                    .owl-carousel .item img {
                         height: 100%;
                         max-width: initial;
                         transform: translateX(-50%);
+                        margin: auto;
+                        position: absolute;
+                        left: 50%;
+                        width: initial!important;
+                        min-width: 100%;
                     }
                     .carousel-caption {
                         width: 90%;
                         left: 5%;
-                        bottom: 0;
+                        bottom: 50px;
                         top: initial;
                         text-align: center;
+                        transform: initial;
+                        -webkit-transform: initial;
                     }
                 }
                 </style>
