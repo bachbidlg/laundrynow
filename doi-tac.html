@@ -349,9 +349,11 @@
                 .form-title {
                     font-weight: 600;
                     font-size: 1.786em;
-                    color: #00BA51;
+                    color: #2dc2e7;
                     margin: 0px;
                     margin-bottom: 10px;
+                    margin-top: 10px;
+                    margin-left: 15px;
                 }
                 #form-doitac input[type="text"], #form-doitac select {
                     border-radius: 3px;
@@ -439,18 +441,18 @@
                                     <div class="col-md-6 col-xs-12 form-group">
                                         <input type="text" class="form-control" name="partner-email" placeholder="Địa chỉ email" modal-data-validate="required|email">
                                     </div>
-                                    <div class="col-xs-12 form-group">
+                                    <div class="col-xs-12 form-group" style="margin-left: 2px">
                                         <label class="control-label">Giới tính:</label>
-                                        <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"><label class="control-label" for="gender-1">Nam</label>
-                                        <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0"><label class="control-label" for="gender-0">Nữ</label>
+                                        <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"style="margin-left: 5px; margin-right: 5px"><label class="control-label" for="gender-1">Nam</label>
+                                        <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0" style="margin-left: 10px; margin-right: 5px"><label class="control-label" for="gender-0">Nữ</label>
                                     </div>
                                     <div class="col-xs-6 form-group">
-                                        <label class="control-label" for="ipt-delivery">Có thể giao nhận hàng</label>
-                                        <input type="checkbox" name="" value="" id="ipt-delivery">
+                                        <label class="control-label" for="ipt-delivery" style="margin-left: 2px">Có thể giao nhận hàng</label>
+                                        <input type="checkbox" name="" value="" id="ipt-delivery"  style="margin-left: 5px">
                                     </div>
                                     <div class="col-xs-6 form-group">
                                         <label class="control-label" for="ipt-machine">Có máy giặt tại nhà</label>
-                                        <input type="checkbox" name="" value="" id="ipt-machine">
+                                        <input type="checkbox" name="" value="" id="ipt-machine"  style="margin-left: 5px">
                                     </div>
                                     <div class="col-xs-12 form-group">
                                         <input type="text" class="form-control" name="partner-address" placeholder="Địa chỉ" modal-data-validate="required">
@@ -466,8 +468,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-footer">
-                                    <button type="submit" class="btn" name="btn-form-submit">Đăng ký ngay</button>
+                                <div class="form-footer" style="margin-bottom: 10px">
+                                    <button type="submit" class="btn" name="btn-form-submit">Đăng ký</button>
                                 </div>
                             </form>
                         </div>
@@ -502,13 +504,13 @@
                 </script>
                 <section id="section-list-group-horizontal-why-join-grabbike" class="section section--padded section--light section-list-group-horizontal section-icon-list" style="">
                     <div class="container">
-                        <header>
-                            <h2>Vì sao nên tham gia LaunderNow</h2>
-                        </header>
+                         <h2 class="sc_services_title sc_item_title">Vì sao bạn nên trở thành đối tác của chúng tôi</h2>
+                                                            <h6 class="sc_services_subtitle sc_item_subtitle">3 quyền lợi chỉ có tại LaunderNow</h6>
+
                         <div class="row row-horizontal">
                             <div class="col-xs-12 col-md-4">
                                 <img src="./wp-content/uploads/2016/07/icon-freedom.png">
-                                <h4 class="color-green text-center">Công việc tự do, văn minh và hiện đại:</h4>
+                                <h4 class="color-dark text-center">Công việc tự do, văn minh và hiện đại</h4>
                                 <p class="text-center"></p>
                                 <ul>
                                     <li>
@@ -522,7 +524,7 @@
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <img src="./wp-content/uploads/2016/07/icon-earn-1.png">
-                                <h4 class="color-green text-center">Thu nhập cao và hợp pháp:</h4>
+                                <h4 class="color-dark text-center">Thu nhập cao và hợp pháp</h4>
                                 <p class="text-center"></p>
                                 <ul>
                                     <li>
@@ -539,7 +541,7 @@
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <img src="./wp-content/uploads/2016/07/icon-hours.png">
-                                <h4 class="color-green text-center">Đăng kí nhanh và dễ dàng:</h4>
+                                <h4 class="color-dark text-center">Đăng kí nhanh và dễ dàng</h4>
                                 <p class="text-center"></p>
                                 <ul>
                                     <li>
@@ -563,7 +565,7 @@
                     padding:20px 0;
                     }
                     .scheme_original .ddlbtn:hover, .scheme_original .ddlbtn:focus {
-                    background-color: #00BE45;
+                    background-color: #2984cc;
                     text-decoration: none;
                     color: #FFF;
                     }
@@ -717,23 +719,26 @@
                     .section-hero.bg-size-cover {background-position: calc(43%) top !important; background-size: auto 500px}
                     }
                 </style>
-                <section id="section-wysiwyg-wait-join-grabbikegrabexpress-now" class="section section--padded section--light section-wysiwyg bg-size-cover" style="background-image: url(https://17225-presscdn-0-73-pagely.netdna-ssl.com/vn/wp-content/uploads/sites/11/2016/08/background.jpg);">
+                <section id="section-wysiwyg-wait-join-grabbikegrabexpress-now" class="section section--padded section--light section-wysiwyg bg-size-cover" style="background-image: url(wp-content/uploads/2016/06/background.jpg);">
                     <div class="container">
                         <header>
                             <h2>Tại sao phải chờ? Gia nhập LaunderNow ngay hôm nay</h2>
                         </header>
                         <p style="text-align: center;">Gia nhập đội ngũ LaunderNow để làm việc trong một môi trường thoải mái, thú vị tại nhà.</p>
                         <div class="row">
-                            <div class="col-md-12 alignCenter actionArea"><a class="ddlbtn scroll-to" data-scroll="form-doitac" href="javascript: void(0)">Trở thành đối tác</a></div>
+                            <div class="col-md-12 alignCenter actionArea">
+                                    <button class="btn scroll-to" data-scroll="form-doitac" style="padding: 10px"  name="btn-form-submit">Trở thành đối tác</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <!-- /container -->
                 </section>
                 <section id="section-raw-html-quy-trinh-tro-thanh-tai-xe-grabbike" class="section section--light section-raw-html" style="padding-top: 50px;padding-bottom: px;">
                     <div class="container">
-                        <header>
-                            <h2>Quy trình trở thành đối tác LaunderNow</h2>
-                        </header>
+                           <h2 class="sc_services_title sc_item_title">Quy trình trở thành đối tác LaunderNow</h2>
+                                                            <h6 class="sc_services_subtitle sc_item_subtitle">4 bước để có thêm thu nhập mỗi ngày</h6>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="cognito-content-wrapper-sm cognito-text-center">
@@ -782,33 +787,37 @@
                                                 <div class="wpb_wrapper">
                                                     <div id="sc_services_1141653678_wrap" class="sc_services_wrap">
                                                         <div id="sc_services_1141653678" class="sc_services sc_services_style_services-1 sc_services_type_icons " style="width:100%;">
-                                                            <h2 class="sc_services_title sc_item_title">Giặt ủi chưa bao giờ đơn giản như vậy!</h2>
-                                                            <h6 class="sc_services_subtitle sc_item_subtitle">Bạn có thể hoàn thành việc giặt ủi chỉ với 3 bước:</h6>
+                                                            <h2 class="sc_services_title sc_item_title">Quy trình sử dụng</h2>
+                                                            <h6 class="sc_services_subtitle sc_item_subtitle">Ứng dụng LaunderNow trên điện thoại thông minh</h6>
                                                             <div class="sc_columns columns_wrap">
                                                                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                                                                     <div class="carousel carousel--mobileview carousel-fade slide clearfix" data-ride="carousel" id="carousel--mobileview--how-it-works-grabtaxi">
                                                                         <!-- Indicators -->
                                                                         <ol class="carousel-indicators steps--4 clearfix">
                                                                             <li class="active" data-slide-to="0" data-target="#carousel--mobileview--how-it-works-grabtaxi" data-step="1">
-                                                                                <h4>Chọn loại dịch vụ</h4>
-                                                                                <p>Chọn cách giặt ủi mà bạn mong muốn với mức giá ưu đãi.</p>
+                                                                                <h4>Khởi động ứng dụng</h4>
+                                                                                <p>Mở ứng dụng để bắt đầu nhận đơn hàng của khách hàng.</p>
                                                                             </li>
                                                                             <li data-slide-to="1" data-target="#carousel--mobileview--how-it-works-grabtaxi" data-step="2">
-                                                                                <h4>Xác nhận thông tin</h4>
-                                                                                <p>Xác nhận thông tin để chúng tôi phục vụ bạn tốt nhất.</p>
+                                                                                <h4>Nhận đơn hàng</h4>
+                                                                                <p>Chấp thuận đơn hàng để nhận được thông tin đầy đủ của khách hàng. Bạn có thể lựa chọn chấp nhận các đơn hàng ở gần mình nhất.</p>
                                                                             </li>
                                                                             <li data-slide-to="2" data-target="#carousel--mobileview--how-it-works-grabtaxi" data-step="3">
-                                                                                <h4>Gửi đơn hàng</h4>
-                                                                                <p>Đơn hàng sẽ được điều phối đến nhân viên phù hợp nhất.</p>
+                                                                                <h4>Nhận đồ giặt ủi</h4>
+                                                                                <p>Hệ thống định vị GPS sẽ hiển thị địa điểm của khách hàng để đến nhận đồ giặt ủi, phạm vi tối đa 5km.</p>
                                                                             </li>
                                                                             <li data-slide-to="3"  data-target="#carousel--mobileview--how-it-works-grabtaxi" data-step="4">
-                                                                                <h4>Hoàn thành</h4>
-                                                                                <p>Nhân viên sẽ đến tận nơi nhận/giao đồ giặt.</p>
+                                                                                <h4>Xử lý đồ giặt</h4>
+                                                                                <p>Xử lý đồ giặt theo đơn hàng, thông báo với khách hàng rằng đơn hàng đã hoàn tất.</p>
+                                                                            </li>
+                                                                              <li data-slide-to="4"  data-target="#carousel--mobileview--how-it-works-grabtaxi" data-step="5">
+                                                                                <h4>Giao đồ giặt ủi</h4>
+                                                                                <p>Giao đồ giặt đã hoàn tất cho khách và thanh toán tiền. Kết thúc đơn hàng thành công với ứng dụng LaunderNow.</p>
                                                                             </li>
                                                                         </ol>
                                                                         <!-- Wrapper for slides -->
                                                                         <div class="carousel-description visible-xs"></div>
-                                                                        <div class="carousel-inner">
+                                                                        <div class="carousel-inner" style="margin-top: 10px">
                                                                             <div class="item active">
                                                                                 <img src="wp-content/uploads/2016/06/steps1.jpg" />
                                                                             </div>
@@ -828,7 +837,7 @@
                                                                             <!-- /item -->
                                                                         </div>
                                                                         <!-- /carousel-inner -->
-                                                                        <div class="carousel-bg"></div>
+                                                                        <div class="carousel-bg" style="margin-top: 10px"></div>
                                                                     </div>
                                                                     <!-- /carousel -->
                                                                 </div>
@@ -1183,8 +1192,8 @@
                                 <aside id="text-3" class="widget_number_4 column-1_4 widget widget_text">
                                     <h3 class="widget_title">Thông tin liên hệ</h3>
                                     <div class="textwidget">
-                                        <div class="info icon-phone">123-456-7890</div>
-                                        Số 2 Phạm Ngọc Thạch, P.6, Q.3, Tp.HCM
+                                        <div class="info icon-phone">01225-697-181</div>
+                                        Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
                                         <span style="text-decoration: underline; display: block;">
                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
                                         </span>
@@ -1344,8 +1353,8 @@
                             <div class="widget_area">
                                 <div class="widget_text">
                                     <div class="textwidget">
-                                        <div class="info icon-phone">123-456-7890</div>
-                                        Số 2 Phạm Ngọc Thạch, P.6, Q.3, Tp.HCM
+                                        <div class="info icon-phone">01225-697-181</div>
+                                        Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
                                         <span style="text-decoration: underline; display: block;">
                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
                                         </span>
