@@ -69,7 +69,8 @@
         <link property="stylesheet" rel='stylesheet' id='mediaelement-css'  href='wp-includes/js/mediaelement/mediaelementplayer.min51cd.css?ver=2.22.0' type='text/css' media='all' />
         <link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css'  href='wp-includes/js/mediaelement/wp-mediaelement.min13f7.css?ver=4.6.6' type='text/css' media='all' />
         <link property="stylesheet" rel='stylesheet' id='js_composer_front-css'  href='wp-content/plugins/js_composer/assets/css/js_composer.min972f.css?ver=5.0.1' type='text/css' media='all' />
-        <script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+        <!-- <script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script> -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
         <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
         <script type='text/javascript' src='../use.fontawesome.com/fcc8474e794698.js?ver=4.6.3'></script>
         <script type='text/javascript' src='wp-content/plugins/essential-grid/public/assets/js/lightbox5bfb.js?ver=2.0.9.1'></script>
@@ -443,16 +444,16 @@
                                     </div>
                                     <div class="col-xs-12 form-group" style="margin-left: 2px">
                                         <label class="control-label">Giới tính:</label>
-                                        <input type="radio" checked name="gender" id="gender-1" class="ipt-radio" value="1"style="margin-left: 5px; margin-right: 5px"><label class="control-label" for="gender-1">Nam</label>
-                                        <input type="radio" name="gender" id="gender-0" class="ipt-radio" value="0" style="margin-left: 10px; margin-right: 5px"><label class="control-label" for="gender-0">Nữ</label>
+                                        <input type="radio" checked name="partner-gender" id="gender-1" class="ipt-radio" value="1"><label class="control-label" for="gender-1">Nam</label>
+                                        <input type="radio" name="partner-gender" id="gender-0" class="ipt-radio" value="0"><label class="control-label" for="gender-0">Nữ</label>
                                     </div>
                                     <div class="col-xs-6 form-group">
-                                        <label class="control-label" for="ipt-delivery" style="margin-left: 2px">Có thể giao nhận hàng</label>
-                                        <input type="checkbox" name="" value="" id="ipt-delivery"  style="margin-left: 5px">
+                                        <label class="control-label" for="ipt-delivery">Có thể giao nhận hàng</label>
+                                        <input type="checkbox" name="partner-delivery" value="" id="ipt-delivery">
                                     </div>
                                     <div class="col-xs-6 form-group">
                                         <label class="control-label" for="ipt-machine">Có máy giặt tại nhà</label>
-                                        <input type="checkbox" name="" value="" id="ipt-machine"  style="margin-left: 5px">
+                                        <input type="checkbox" name="partner-machine" value="" id="ipt-machine">
                                     </div>
                                     <div class="col-xs-12 form-group">
                                         <input type="text" class="form-control" name="partner-address" placeholder="Địa chỉ" modal-data-validate="required">
@@ -461,20 +462,61 @@
                                         <input type="text" class="form-control" name="partner-job" placeholder="Công việc hiện tại" modal-data-validate="required">
                                     </div>
                                     <div class="col-md-6 col-xs-12 form-group">
-                                        <select class="form-control" name="partner-mode" modal-data-validate="required">
+                                        <select class="form-control" name="partner-mode" modal-data-validate="required" placeholder="Chế độ làm việc">
                                             <option value="">Chế độ làm việc</option>
                                             <option value="1">Toàn thời gian</option>
                                             <option value="2">Bán thời gian</option>
                                         </select>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <div class="form-footer" style="margin-bottom: 10px">
                                     <button type="submit" class="btn" name="btn-form-submit">Đăng ký</button>
+=======
+                                <div class="form-footer">
+                                    <button type="button" class="btn" name="btn-form-submit">Đăng ký ngay</button>
+>>>>>>> 2c1bd77f8572abc0a64e81e8f7db958c841ddfba
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                        jQuery('#form-doitac').on('click', '.btn[name="btn-form-submit"]', function(){
+                            var formdoitac = jQuery('#form-doitac'),
+                                checkvalidate = validateFormModal('form-doitac');
+                            if(checkvalidate === true) {
+                                var form = {
+                                    'partner-lastname': formdoitac.find('input[name="partner-lastname"]').val(),
+                                    'partner-firstname': formdoitac.find('input[name="partner-firstname"]').val(),
+                                    'partner-phone': formdoitac.find('input[name="partner-phone"]').val(),
+                                    'partner-email': formdoitac.find('input[name="partner-email"]').val(),
+                                    'partner-gender': formdoitac.find('input[name="partner-gender:checked"]').val(),
+                                    'partner-delivery': formdoitac.find('input[name="partner-delivery"]').is(':checked') === true ? 1 : 0,
+                                    'partner-machine': formdoitac.find('input[name="partner-machine"]').is(':checked') === true ? 1 : 0,
+                                    'partner-address': formdoitac.find('input[name="partner-address"]').val(),
+                                    'partner-job': formdoitac.find('input[name="partner-job"]').val(),
+                                    'partner-mode': formdoitac.find('input[name="partner-mod"]e').val()
+                                };
+                                jQuery.ajax({
+                                    type: 'POST',
+                                    url: 'http://dichvucungung.com/server.php',
+                                    data: form,
+                                    dataType: 'json'
+                                }).done(function(res){
+                                    if(res.statusCode == 200){
+                                        loadModal('modal-partner-success');
+                                        jQuery('#modal-partner-success').modal();
+                                        emptyFormModal('form-doitac');
+                                    } else {
+                                        alert(res.msg);
+                                    }
+                                });
+                            }
+                        });
+                    });
+                </script>
                 <script>
                     function setHeightSlider(){
                         jQuery('.item').css({
@@ -1406,6 +1448,25 @@
                 var filter = /^[0-9-+]+$/;
                 return phone.length > 9 && filter.test(phone);
             }
+            function emptyFormModal(modal){
+                var tag = ['input', 'textarea', 'select'];
+                jQuery.each(tag, function(k, v){
+                    jQuery('#'+modal).find(v).each(function(){
+                        var tagcurrent = jQuery(this);
+                        switch(v.trim()){
+                            case 'input':
+                                tagcurrent.val('');
+                                break;
+                            case 'textarea':
+                                tagcurrent.html('');
+                                break;
+                            case 'select':
+                                tagcurrent.find('option').prop('selected', false);
+                                break;
+                        }
+                    })
+                })
+            }
             function validateFormModal(modal){
                 var validate = true,
                     tag = ['input', 'textarea', 'select'];
@@ -1567,7 +1628,7 @@
             var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
             /* ]]> */
         </script>
-        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min91ac.js?ver=2.6.8'></script>
+        <!-- <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min91ac.js?ver=2.6.8'></script> -->
         <script type='text/javascript' src='wp-content/themes/gowash/fw/js/superfish.js'></script>
         <script type='text/javascript' src='wp-content/themes/gowash/fw/js/core.utils.js'></script>
         <script type='text/javascript'>
