@@ -836,7 +836,7 @@
                     }
                 });
                 jQuery('body').on('click focus active', '.hasError, .error-msg', function(){
-                    jQuery(this).parent().find('.hasError').removeClass('hasError').parent().find('.error-msg').remove();
+                    jQuery(this).parent().find('.hasError').removeClass('hasError').focus().parent().find('.error-msg').remove();
                 });
             })
         </script>

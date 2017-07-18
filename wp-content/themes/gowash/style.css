@@ -7557,13 +7557,28 @@ body.scheme_original td, body.scheme_original th {
 }
 span.error-msg {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 15px;
-    transform: translateY(-100%);
-    background: red;
-    color: #fff;
-    padding: 0px 10px;
+    transform: translateY(100%);
+    background: #fbfbfb url(../../uploads/2016/07/icon-warning.png) no-repeat left 10px center;
+    color: #000000;
+    padding: 5px 10px 5px 33px;
     max-width: calc(100% - 30px);
+    border: solid 1px #bababa;
+    border-radius: 5px;
+    z-index: 9;
+    font-size: 14px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+span.error-msg:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    background: url(../../uploads/2016/07/icon-arrow-warning.png) no-repeat center center;
+    width: 13px;
+    height: 7px;
+    z-index: 99;
 }
 .modal .form-control:active, .modal .form-control:focus {
     z-index: 999;
