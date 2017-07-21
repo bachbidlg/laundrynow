@@ -763,7 +763,8 @@
             }
             function validateFormModal(modal){
                 var validate = true,
-                    tag = ['input', 'textarea', 'select'];
+                    tag = ['input', 'textarea', 'select'],
+                    errorNumber = 0;
                 jQuery.each(tag, function(k, v){
                     jQuery('#'+modal).find(v).each(function(){
                         var tagcurrent = jQuery(this),
@@ -771,35 +772,40 @@
                         if(!isNull(hasCheckValidate)) {
                             var rule = hasCheckValidate.split('|');
                             jQuery.each(rule, function(k_rule, v_rule){
-                                switch(v_rule.trim()){
-                                    case 'required':
-                                        if(isNull(tagcurrent.val())){
-                                            tagcurrent.addClass('hasError');
-                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
-                                                tagcurrent.parent().append('<span class="error-msg">Vui lòng '+(v == 'select' ? 'chọn' : 'nhập')+' '+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+'</span>');
+                                if(errorNumber < 1){
+                                    switch(v_rule.trim()){
+                                        case 'required':
+                                            if(isNull(tagcurrent.val())){
+                                                tagcurrent.addClass('hasError');
+                                                if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                    tagcurrent.parent().append('<span class="error-msg">Vui lòng '+(v == 'select' ? 'chọn' : 'nhập')+' '+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+'</span>');
+                                                }
+                                                validate = false;
+                                                errorNumber++;
                                             }
-                                            validate = false;
-                                        }
-                                        break;
-                                    case 'email':
-                                        if(!isEmail(tagcurrent.val())){
-                                            tagcurrent.addClass('hasError');
-                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
-                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            break;
+                                        case 'email':
+                                            if(!isEmail(tagcurrent.val())){
+                                                tagcurrent.addClass('hasError');
+                                                if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                    tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                                }
+                                                validate = false;
+                                                errorNumber++;
                                             }
-                                            validate = false;
-                                        }
-                                        break;
-                                    case 'phone':
-                                        if(!isPhone(tagcurrent.val())){
-                                            tagcurrent.addClass('hasError');
-                                            if(tagcurrent.parent().find('.error-msg').length <= 0) {
-                                                tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                            break;
+                                        case 'phone':
+                                            if(!isPhone(tagcurrent.val())){
+                                                tagcurrent.addClass('hasError');
+                                                if(tagcurrent.parent().find('.error-msg').length <= 0) {
+                                                    tagcurrent.parent().append('<span class="error-msg">'+(!isNull(tagcurrent.attr('modal-data-placeholder')) ? tagcurrent.attr('modal-data-placeholder') : tagcurrent.attr('placeholder'))+' không đúng định dạng!</span>');
+                                                }
+                                                validate = false;
+                                                errorNumber++;
                                             }
-                                            validate = false;
-                                        }
-                                        break;
-                                    default: ;
+                                            break;
+                                        default: ;
+                                    }
                                 }
                             });
                         }
