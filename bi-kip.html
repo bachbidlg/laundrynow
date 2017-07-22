@@ -325,8 +325,14 @@
                             .slick-next {right: 15%; top: 155px; width: 13px; background-image: url(./wp-content/uploads/2016/07/slick-arrow-right.png); height: 23px; transform:none; z-index:5}
                             .edu-body #pax .main-box .item-header {background-color: #28bde2;}
                             .slick-prev:before, .slick-next:before {display:none;}
-                            .slick-prev:hover, .slick-prev:focus {background-image: url(./wp-content/uploads/2016/07/slick-arrow-left.png);}
-                            .slick-next:hover, .slick-next:focus {background-image: url(./wp-content/uploads/2016/07/slick-arrow-right.png);}
+                            .main-box .slick-prev, .main-box .slick-prev,
+                            .main-box .slick-prev:hover, .main-box .slick-prev:hover,
+                            .main-box .slick-prev:focus, .main-box .slick-prev:focus,
+                            .main-box .slick-prev:active, .main-box .slick-prev:active {background-image: url(./wp-content/uploads/2016/07/slick-arrow-left.png);}
+                            .main-box .slick-next, .main-box .slick-next,
+                            .main-box .slick-next:hover, .main-box .slick-next:hover,
+                            .main-box .slick-next:focus, .main-box .slick-next:focus,
+                            .main-box .slick-next:active, .main-box .slick-next:active {background-image: url(./wp-content/uploads/2016/07/slick-arrow-right.png);}
                             #book .slick-prev, #book .slick-next {top:155px;}
                             .slick-disabled { opacity: 0; pointer-events:none; }
                             @font-face {
@@ -354,10 +360,9 @@
                             <div class="row">
 
                                 <div class="fluid-container">
-          <h2 style="margin-top: -45px" class="sc_services_title sc_item_title">Bí kíp</h2>
-                                        <h6 class="sc_services_subtitle sc_item_subtitle"
-                                        style=" font-size: 1em;font-family: 'Sanomat Grab Web', sans-serif">ĐỂ ĐƠN HÀNG HOÀN THÀNH MỸ MÃN</h6>
-                                                      <div class="container text-center">
+                                    <h2 style="margin-top: -45px" class="sc_services_title sc_item_title">Bí kíp</h2>
+                                    <h6 class="sc_services_subtitle sc_item_subtitle" style=" font-size: 1em;font-family: 'Sanomat Grab Web', sans-serif">ĐỂ ĐƠN HÀNG HOÀN THÀNH MỸ MÃN</h6>
+                                    <div class="container text-center">
 
                                         <ul class="edu-tab" role="tablist" id="edu">
                                             <li role="presentation" class="active">
@@ -371,51 +376,39 @@
                                             <div role="tabpanel" class="tab-pane active" id="dax">
                                             <!--   <div class="hero-box">BÍ KÍP ĐỂ ĐƠN HÀNG HOÀN THÀNH MỸ MÃN</div>*/ -->
                                                 <div class="main-box">
-                                                    <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">
+                                                    <div  style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
                                                         <div class="item-header">NHẬN ĐỒ GIẶT</div>
-                                                        <div class="item-body slick-initialized slick-slider" id="late">
-                                                            <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block; ">Previous</button>
-                                                            <div aria-live="polite" class="slick-list draggable">
-                                                                <div class="slick-track" role="listbox" style="opacity: 1; width: 1615px; left: 0px;">
-                                                                    <div class="item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 283px;">
-                                                                        <div class="item-caption">Nếu khách để tôi đợi quá lâu?</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-My-passenger-is-late.png"></div>
-                                                                        <div class="item-footnote">Nếu khách hàng để bạn chờ lâu quá 5 phút, hãy nhẹ nhàng gọi hoặc nhắn tin nhờ vào số điện thoại hiện lên trên ứng dụng để nhắc họ là bạn đã đến nơi và khách hàng vui lòng giao/nhận đồ giặt.</div>
-                                                                    </div>
-                                                                    <div class="item slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 283px;">
-                                                                        <div class="item-caption">Đón khách</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Picking-up-my-passenger.png"></div>
-                                                                        <div class="item-footnote">Cẩn thận xác nhận số lượng đồ giặt khi nhận đồ giặt từ khách. Số lượng được bạn xác nhận sẽ là số liệu để LaunderNow sử dụng đối chiếu với khách hàng</div>
-                                                                    </div>
-                                                                    <div class="item slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 283px;">
-                                                                        <div class="item-caption">Xác nhận điểm trả khách</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Confirming-the-drop-off-location.png"></div>
-                                                                        <div class="item-footnote">Xác nhận điểm đón và điểm đến với khách. Việc này giúp cả hai không phải đi đường vòng, mất thời gian và tốn kém.</div>
-                                                                    </div>
-                                                                    <div class="item slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 283px;">
-                                                                        <div class="item-caption">Sử dụng GrabChat để nhắn tin miễn phí</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Using-GrabChat-for-free-confirmations.png"></div>
-                                                                        <div class="item-footnote">Bạn sẽ tiết kiệm được rất nhiều tiền điện thoại khi dùng GrabChat để liên lạc với hành khách.</div>
-                                                                    </div>
-                                                                    <div class="item slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 283px;">
-                                                                        <div class="item-caption">GrabPay hay không?</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-GrabPay-or-not.png" style="padding-top:12px; padding-bottom:10px"></div>
-                                                                        <div class="item-footnote">Vui lòng kiểm tra phương thức thanh toán. Nếu khách dùng GrabPay, vui lòng không thu tiền mặt hoặc các hình thức thanh toán khác.</div>
-                                                                    </div>
-                                                                </div>
+                                                        <div class="item-body" id="late">
+                                                            <div class="item">
+                                                                <div class="item-caption">Nếu khách để tôi đợi quá lâu?</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-My-passenger-is-late.png"></div>
+                                                                <div class="item-footnote">Nếu khách hàng để bạn chờ lâu quá 5 phút, hãy nhẹ nhàng gọi hoặc nhắn tin nhờ vào số điện thoại hiện lên trên ứng dụng để nhắc họ là bạn đã đến nơi và khách hàng vui lòng giao/nhận đồ giặt.</div>
                                                             </div>
-                                                            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block; background:url(./wp-content/uploads/2016/07/slick-arrow-right.png); height: 23px; transform:none; z-index:5" aria-disabled="false">Next</button>
+                                                            <div class="item">
+                                                                <div class="item-caption">Đón khách</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Picking-up-my-passenger.png"></div>
+                                                                <div class="item-footnote">Cẩn thận xác nhận số lượng đồ giặt khi nhận đồ giặt từ khách. Số lượng được bạn xác nhận sẽ là số liệu để LaunderNow sử dụng đối chiếu với khách hàng</div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="item-caption">Xác nhận điểm trả khách</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Confirming-the-drop-off-location.png"></div>
+                                                                <div class="item-footnote">Xác nhận điểm đón và điểm đến với khách. Việc này giúp cả hai không phải đi đường vòng, mất thời gian và tốn kém.</div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="item-caption">Sử dụng GrabChat để nhắn tin miễn phí</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Using-GrabChat-for-free-confirmations.png"></div>
+                                                                <div class="item-footnote">Bạn sẽ tiết kiệm được rất nhiều tiền điện thoại khi dùng GrabChat để liên lạc với hành khách.</div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="item-caption">GrabPay hay không?</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-GrabPay-or-not.png"></div>
+                                                                <div class="item-footnote">Vui lòng kiểm tra phương thức thanh toán. Nếu khách dùng GrabPay, vui lòng không thu tiền mặt hoặc các hình thức thanh toán khác.</div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">
+                                                    <div style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
                                                         <div class="item-header">TRONG LÚC CHỞ KHÁCH</div>
-                                                        <div class="item-body" id="dax-during">
+                                                        <div class="item-body" id="pax-during">
                                                             <div class="item">
                                                                 <div class="item-caption">Phụ phí được tính như thế nào?</div>
                                                                 <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-What-about-tolls.png"></div>
@@ -423,28 +416,19 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">
+                                                    <div style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
                                                         <div class="item-header">TRẢ KHÁCH</div>
-                                                        <div class="item-body slick-initialized slick-slider" id="after">
-                                                            <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>
-                                                            <div aria-live="polite" class="slick-list draggable">
-                                                                <div class="slick-track" role="listbox" style="opacity: 1; width: 646px; left: 0px;">
-                                                                    <div class="item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10" style="width: 283px;">
-                                                                        <div class="item-caption">Nhắc lại giá cước</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Declaring-the-fare.png"></div>
-                                                                        <div class="item-footnote">Trước khi nhấn “hoàn thành chuyến đi”, vui lòng thông báo lại giá cước và các phụ phí để khách hàng được rõ.</div>
-                                                                    </div>
-                                                                    <div class="item slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11" style="width: 283px;">
-                                                                        <div class="item-caption">Khi nào thì nhấn kết thúc chuyến?</div>
-                                                                        <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-When-does-it-end.png"></div>
-                                                                        <div class="item-footnote">Khi nhấn “Trả khách”, hệ thống Grab sẽ tiến hành giao dịch thu tiền. Vì vậy, bạn không nên nhấn trả khách khi chuyến đi chưa kết thúc.</div>
-                                                                    </div>
-                                                                </div>
+                                                        <div class="item-body" id="end">
+                                                            <div class="item">
+                                                                <div class="item-caption">Nhắc lại giá cước</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-Declaring-the-fare.png"></div>
+                                                                <div class="item-footnote">Trước khi nhấn “hoàn thành chuyến đi”, vui lòng thông báo lại giá cước và các phụ phí để khách hàng được rõ.</div>
                                                             </div>
-                                                            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block; background:url(./wp-content/uploads/2016/07/slick-arrow-right.png" aria-disabled="false">Next</button>
+                                                            <div class="item">
+                                                                <div class="item-caption">Khi nào thì nhấn kết thúc chuyến?</div>
+                                                                <div class="item-img"><img src="./wp-content/uploads/2016/07/icon-When-does-it-end.png"></div>
+                                                                <div class="item-footnote">Khi nhấn “Trả khách”, hệ thống Grab sẽ tiến hành giao dịch thu tiền. Vì vậy, bạn không nên nhấn trả khách khi chuyến đi chưa kết thúc.</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -452,10 +436,8 @@
                                             <div role="tabpanel" class="tab-pane" id="pax">
                                               <!--   <div class="hero-box">BÍ KÍP ĐỂ CÓ CHUYẾN ĐI HOÀN HẢO<span>(thậm chí tiết kiệm tiền)</span></div> -->
                                                 <div class="main-box">
-                                                       <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">    <div class="item-header">ĐẶT XE</div>
+                                                    <div  style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
+                                                        <div class="item-header">ĐẶT XE</div>
                                                         <div class="item-body" id="book">
                                                             <div class="item">
                                                                 <div class="item-caption">Kiểm tra phương thức thanh toán</div>
@@ -479,10 +461,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                     <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">      <div class="item-header">TRONG SUỐT CHUYẾN ĐI</div>
+                                                    <div style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
+                                                        <div class="item-header">TRONG SUỐT CHUYẾN ĐI</div>
                                                         <div class="item-body" id="pax-during">
                                                             <div class="item">
                                                                 <div class="item-caption">Các phụ phí thì sao?</div>
@@ -491,10 +471,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                       <div  style="border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 25px 0;
-    margin-bottom: 25px;">    <div class="item-header">KẾT THÚC CHUYẾN ĐI</div>
+                                                    <div style="border: 1px solid #eaeaea; border-radius: 5px; padding: 25px 0; margin-bottom: 25px;">
+                                                        <div class="item-header">KẾT THÚC CHUYẾN ĐI</div>
                                                         <div class="item-body" id="end">
                                                             <div class="item">
                                                                 <div class="item-caption">Số tiền bạn phải trả là…</div>
@@ -519,19 +497,27 @@
                                 jQuery("#passenger-tab-button").parent().addClass("active");
                                 jQuery("#dax").hide();
                                 jQuery("#pax").show();
-                                jQuery('#book').slick({infinite: false, speed: 300,});
+                                jQuery("#pax").find('.item-body').each(function(){
+                                    if(jQuery(this).children('.item').length > 1) {
+                                        jQuery(this).slick({infinite: false, speed: 300,});
+                                    }
+                                })
                               });
                               jQuery("#driver-tab-button").click(function() {
                                 jQuery("#passenger-tab-button").parent().removeClass("active");
                                 jQuery("#driver-tab-button").parent().addClass("active");
                                 jQuery("#pax").hide();
                                 jQuery("#dax").show();
-                                jQuery('#late').slick({infinite: false, speed: 300,});
-                                jQuery('#after').slick({infinite: false, speed: 300,});
+                                jQuery("#dax").find('.item-body').each(function(){
+                                    if(jQuery(this).children('.item').length > 1) {
+                                        jQuery(this).slick({infinite: false, speed: 300,});
+                                    }
+                                })
                               });
+                                jQuery('.edu-tab li').eq(0).children('div').click();
                             });
 
-                            jQuery('#edu div').click(function (e) {
+                            jQuery('#edu li').click(function (e) {
                               e.preventDefault()
                               jQuery(this).tab('show')
                             });
