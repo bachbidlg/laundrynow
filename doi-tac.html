@@ -481,7 +481,7 @@
                 </div>
                 <script type="text/javascript">
                     jQuery(document).ready(function(){
-                        jQuery('#form-doitac').on('click', 'input, select', function(){
+                        jQuery('#form-doitac').on('click focus active', 'input, select', function(){
                             jQuery('.show-msg').slideUp().find('.alert').html('');
                         })
                         jQuery('#form-doitac').on('click', '.btn[name="btn-form-submit"]', function(){
@@ -489,6 +489,7 @@
                                 checkvalidate = validateFormModal('form-doitac');
                             if(checkvalidate === true) {
                                 var form = {
+                                    'act': 'register-partner',
                                     'partner-lastname': formdoitac.find('input[name="partner-lastname"]').val(),
                                     'partner-firstname': formdoitac.find('input[name="partner-firstname"]').val(),
                                     'partner-phone': formdoitac.find('input[name="partner-phone"]').val(),
@@ -498,11 +499,12 @@
                                     'partner-machine': formdoitac.find('input[name="partner-machine"]').is(':checked') === true ? 1 : 0,
                                     'partner-address': formdoitac.find('input[name="partner-address"]').val(),
                                     'partner-job': formdoitac.find('input[name="partner-job"]').val(),
-                                    'partner-mode': formdoitac.find('input[name="partner-mod"]e').val()
+                                    'partner-mode': formdoitac.find('select[name="partner-mode"]').val(),
+                                    'mailSendTo': 'embryo.anonymous@gmail.com'
                                 };
                                 jQuery.ajax({
                                     type: 'POST',
-                                    url: 'http://dichvucungung.com/server.php',
+                                    url: 'http://dichvucungung.com/laundernow/laundernow.php',
                                     data: form,
                                     dataType: 'json'
                                 }).done(function(res){
@@ -510,9 +512,11 @@
                                         loadModal('modal-partner-success');
                                         jQuery('#modal-partner-success').modal();
                                         emptyFormModal('form-doitac');
+                                        if(!isNull(res.msgConsole)) console.log(res.msgConsole);
                                     } else {
                                         jQuery('.show-msg .alert').html(res.msg);
                                         jQuery('.show-msg').slideDown();
+                                        if(!isNull(res.msgConsole)) console.log(res.msgConsole);
                                     }
                                 });
                             }
@@ -1458,6 +1462,7 @@
                         switch(v.trim()){
                             case 'input':
                                 tagcurrent.val('');
+                                tagcurrent.prop('checked', false);
                                 break;
                             case 'textarea':
                                 tagcurrent.html('');
@@ -1467,7 +1472,8 @@
                                 break;
                         }
                     })
-                })
+                });
+                jQuery('#'+modal+' .show-msg').slideUp().html('');
             }
             function validateFormModal(modal){
                 var validate = true,
