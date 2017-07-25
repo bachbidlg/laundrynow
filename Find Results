@@ -1,0 +1,119 @@
+Searching 428 files for "mailsendto"
+
+/Users/TAnh/Documents/Workspace/laundrynow/doi-tac.html:
+  501                                      'partner-job': formdoitac.find('input[name="partner-job"]').val(),
+  502                                      'partner-mode': formdoitac.find('select[name="partner-mode"]').val(),
+  503:                                     'mailSendTo': 'embryo.anonymous@gmail.com'
+  504                                  };
+  505                                  jQuery.ajax({
+
+1 match in 1 file
+
+
+Searching 428 files for "laundernow@gmail.com"
+
+/Users/TAnh/Documents/Workspace/laundrynow/doi-tac.html:
+ 1244                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+ 1245                                          <span style="text-decoration: underline; display: block;">
+ 1246:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+ 1247                                          </span>
+ 1248                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+ ....
+ 1405                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+ 1406                                          <span style="text-decoration: underline; display: block;">
+ 1407:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+ 1408                                          </span>
+ 1409                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/giat-phoi.html:
+  552                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  553                                           <span style="text-decoration: underline; display: block;">
+  554:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  555                                          </span>
+  556                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  712                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  713                                          <span style="text-decoration: underline; display: block;">
+  714:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  715                                          </span>
+  716                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/giat-say.html:
+  552                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  553                                           <span style="text-decoration: underline; display: block;">
+  554:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  555                                          </span>
+  556                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  712                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  713                                          <span style="text-decoration: underline; display: block;">
+  714:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  715                                          </span>
+  716                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/giat-ui.html:
+  552                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  553                                           <span style="text-decoration: underline; display: block;">
+  554:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  555                                          </span>
+  556                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  712                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  713                                          <span style="text-decoration: underline; display: block;">
+  714:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  715                                          </span>
+  716                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/giat-uot.html:
+  552                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  553                                           <span style="text-decoration: underline; display: block;">
+  554:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  555                                          </span>
+  556                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  712                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  713                                          <span style="text-decoration: underline; display: block;">
+  714:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  715                                          </span>
+  716                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/ho-tro.html:
+  621                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  622                                          <span style="text-decoration: underline; display: block;">
+  623:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  624                                          </span>
+  625                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  782                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  783                                          <span style="text-decoration: underline; display: block;">
+  784:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  785                                          </span>
+  786                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/huong-dan.html:
+  601                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  602                                          <span style="text-decoration: underline; display: block;">
+  603:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  604                                          </span>
+  605                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+  762                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  763                                          <span style="text-decoration: underline; display: block;">
+  764:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  765                                          </span>
+  766                                      </div>
+
+/Users/TAnh/Documents/Workspace/laundrynow/index.html:
+  909                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+  910                                          <span style="text-decoration: underline; display: block;">
+  911:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+  912                                          </span>
+  913                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+  ...
+ 1070                                          Số 2 Phạm Ngọc Thạch, phường Bến Nghé, Quận 1, TP.HCM
+ 1071                                          <span style="text-decoration: underline; display: block;">
+ 1072:                                             <a href="mailto: laundernow@gmail.com">laundernow@gmail.com</a>
+ 1073                                          </span>
+ 1074                                      </div>
+
+32 matches across 8 files
